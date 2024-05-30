@@ -1,5 +1,5 @@
 # robot_arm_control
-Repo Structure
+## Repo Structure
 
 move_and_record.py control the robot arm and record video
 
@@ -15,9 +15,9 @@ camera.py control the camera to record video
 
 circle.py control ur5 move in a circle
 
-Example Usages
+## Example Usages
 
-To record a video：
+### To record a video：
 
 ur5_driver
 
@@ -32,13 +32,13 @@ cd work/src
 python move_and_record.py
 
 
-To create dataset and transforms
+### To create dataset and transforms
 
 open 'developer command prompt'
 
 Python D:\BR\Instant-NGP-for-RTX-3000-and-4000\Instant-NGP-for-RTX-3000-and-4000\scripts\colmap2nerf.py --video_in D:\BR\COLMAP\COLMAP-3.9.1-windows-cuda\video3\video.mp4 --video_fps 8 --run_colmap --aabb_scale 16
 
-just create dataset
+### just create dataset
 
 ffmpeg -i video.mp4 -vf fps=8 %04d.jpg
 
@@ -47,7 +47,7 @@ mkdir images
 mv *.jpg images/
 
 
-To train model
+## To train model
 
 drag the folder containing the dataset and transformers files to instant-ngp
 

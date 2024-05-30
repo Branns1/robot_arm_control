@@ -47,7 +47,7 @@ mkdir images
 mv *.jpg images/
 
 
-train model
+To train model
 
 drag the folder containing the dataset and transformers files to instant-ngp
 
